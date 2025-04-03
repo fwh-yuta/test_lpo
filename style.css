@@ -1,158 +1,101 @@
-/* Base styles */
-*, :after, :before {
-    border: 0 solid;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ja" class="md:text-pc text-md">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TWMDQ2NR');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>冬のスキー体験を楽しもう | スノーパラダイス</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="text-16" id="js-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWMDQ2NR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="flex px-o-32 py-o-24 md:px-o-68 justify-between" id="js-header">
+        <img src="img/img2.jpg" alt="ロゴ" class="w-o-300 md:w-o-200">
+        <img src="img/img1.jpg" alt="企業ロゴ" class="w-o-272 md:w-o-180">
+    </header>
 
-html {
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.5;
-}
+    <!-- keyv -->
+    <section class="keyv_bg pt-o-32 md:pt-o-108" id="js-keyv">
+        <div class="keyv-container md:w-o-1400 md:mx-auto">
+            <!-- メインメッセージ -->
+            <h2 class="md:w-o-1400 md:mx-auto">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/img1.jpg">
+                    <source media="(min-width: 768px)" srcset="img/img3.jpg">
+                    <img src="img/img3.jpg" alt="メインメッセージ" class="pb-o-100 w-o-698 mx-auto md:ml-0 md:pb-o-64">
+                </picture>
+            </h2>
+            
+            <!-- メイン動画 -->
+            <div class="video-container mx-auto md:mx-0 mb-o-32">
+                <video autoplay muted loop playsinline class="main-video w-o-698 md:w-o-900 mx-auto md:mx-0">
+                    <source src="video/snow_paradise.mp4" type="video/mp4">
+                    お使いのブラウザはビデオタグをサポートしていません。
+                </video>
+            </div>
+            
+            <!-- 追加画像2枚 -->
+            <div class="additional-images flex flex-wrap justify-between mt-o-20 mb-o-40">
+                <div class="image-item w-o-340 md:w-o-440 mx-auto md:mx-0">
+                    <img src="img/ski_action.jpg" alt="スキーアクション" class="rounded-lg shadow-lg">
+                    <p class="text-white text-center mt-o-10 text-20">絶景ゲレンデでスキー体験</p>
+                </div>
+                <div class="image-item w-o-340 md:w-o-440 mx-auto md:mx-0 mt-o-20 md:mt-0">
+                    <img src="img/snow_resort.jpg" alt="リゾート風景" class="rounded-lg shadow-lg">
+                    <p class="text-white text-center mt-o-10 text-20">快適な施設でリラックス</p>
+                </div>
+            </div>
+            
+            <!-- 元のメインビジュアル -->
+            <picture class="mt-o-20">
+                <source media="(max-width: 767px)" srcset="img/img1.jpg">
+                <source media="(min-width: 768px)" srcset="img/img3.jpg">
+                <img src="img/img3.jpg" alt="メインビジュアル" class="w-o-340 md:w-o-760">
+            </picture>
+        </div>
+    </section>
 
-body {
-    margin: 0;
-    padding: 0;
-}
+    <!-- cta -->
+    <section class="bg-orange pt-o-12 pb-o-32">
+        <div class="w-o-698 mx-auto md:w-o-1400 mt-o-32 max-w-1200">
+            <h2 class="text-38 md:text-32 text-center font-bold bg-orange text-white">
+                <span class="text-yellow text-48">ウィンタースポーツ</span>
+                <span class="text-28">を満喫</span><br class="onlySP">
+                初心者から上級者まで楽しめる
+            </h2>
+        </div>
 
-/* Utility classes */
-.flex { display: flex; }
-.block { display: block; }
-.justify-between { justify-content: space-between; }
-.items-center { align-items: center; }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.text-center { text-align: center; }
+        <div class="cta-btn__area">
+            <h3>パウダースノーの季節到来！<br class="onlySP">最高の雪質でお待ちしています</h3>
+            <ul>
+                <li><a href="#" class="text-blue"><span class="text-28">レッスン</span><span>予約</span></a></li>
+                <li><a href="#" class="text-blue"><span class="text-28">レンタル</span><span>予約</span></a></li>
+                <li><a href="#" class="text-blue"><span class="text-28">宿泊</span><span>予約</span></a></li>
+            </ul>
+        </div>
 
-/* Colors */
-.bg-orange { background-color: #E65100; }
-.bg-yellow { background-color: #FFC107; }
-.text-white { color: #FFFFFF; }
-.text-yellow { color: #FFC107; }
-.text-blue { color: #1976D2; }
+        <a href="ticket.html" class="bg-yellow text-center text-38 font-bold tracking-o-75 block w-o-698 mx-auto mt-o-40 py-o-28 cta_btn_shadow cta_arrow btnCva">
+            <div class="btnCva__flex">
+                <p class="label_or">早割実施中</p>
+                <p class="btnCva--text">シーズン券を購入</p>
+            </div>
+        </a>
 
-/* Typography */
-.text-16 { font-size: 16px; }
-.text-26 { font-size: 26px; }
-.text-28 { font-size: 28px; }
-.text-32 { font-size: 32px; }
-.text-38 { font-size: 38px; }
-.text-48 { font-size: 48px; }
-.font-bold { font-weight: bold; }
-.tracking-o-75 { letter-spacing: 0.075em; }
-
-/* Spacing */
-.px-o-32 { padding-left: 32px; padding-right: 32px; }
-.py-o-24 { padding-top: 24px; padding-bottom: 24px; }
-.pt-o-32 { padding-top: 32px; }
-.pb-o-300 { padding-bottom: 300px; }
-.pt-o-12 { padding-top: 12px; }
-.pb-o-32 { padding-bottom: 32px; }
-.mt-o-32 { margin-top: 32px; }
-.mt-o-40 { margin-top: 40px; }
-
-/* Widths */
-.w-o-300 { width: 300px; }
-.w-o-272 { width: 272px; }
-.w-o-698 { width: 698px; }
-.w-o-340 { width: 340px; }
-.max-w-1200 { max-width: 1200px; }
-
-/* Components */
-.keyv_bg {
-    background-image: url('img/img5.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.keyv_bg.variant {
-    background-image: url('img/img6.jpg');
-}
-
-.cta_arrow {
-    position: relative;
-}
-
-.cta_arrow:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #333;
-    border-right: 2px solid #333;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -5px;
-}
-
-.cta_btn_shadow {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.cta-btn__area {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.cta-btn__area h3 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.cta-btn__area ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.cta-btn__area a {
-    text-decoration: none;
-    padding: 15px 30px;
-    display: block;
-    background: #FFFFFF;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.cta-btn__area a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.btnCva__flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.label_or {
-    background: #E65100;
-    color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-    .md\:w-o-200 { width: 200px; }
-    .md\:w-o-180 { width: 180px; }
-    .md\:w-o-1400 { width: 1400px; }
-    .md\:w-o-760 { width: 760px; }
-    .md\:px-o-68 { padding-left: 68px; padding-right: 68px; }
-    .md\:pt-o-108 { padding-top: 108px; }
-    .md\:pb-o-64 { padding-bottom: 64px; }
-    .md\:ml-0 { margin-left: 0; }
-    .md\:text-32 { font-size: 32px; }
-}
-
-@media (max-width: 767px) {
-    .onlySP { display: block; }
-}
+        <div class="text-26 text-center tracking-o-75 font-bold md:text-32 text-white mt-o-32">
+            <p>標高2000mの絶景ゲレンデ</p>
+            <p>天然雪100%の極上パウダー</p>
+        </div>
+    </section>
+</body>
+</html>
