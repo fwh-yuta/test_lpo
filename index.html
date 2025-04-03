@@ -29,22 +29,30 @@
     <section class="keyv_bg pt-o-32 md:pt-o-108" id="js-keyv">
         <div class="keyv-container md:w-o-1400 md:mx-auto">
             <!-- メインメッセージ -->
-            <h2 class="md:w-o-1400 md:mx-auto">
-                <video>
-                    <source src="video/245932.mp4" alt="メインメッセージ" class="main-video pb-o-100 w-o-698 mx-auto md:ml-0 md:pb-o-64">
-                </video>
+            <h2 class="md:w-o-1400 md:mx-auto text-center mb-o-40">
+                <span class="text-white text-48 font-bold">Winter Paradise</span>
             </h2>
             
-            <!-- メイン動画 -->
-            <div class="video-container mx-auto md:mx-0 mb-o-32">
-                <video autoplay muted loop playsinline class="main-video w-o-698 md:w-o-900 mx-auto md:mx-0">
-                    <source src="video/265501.mp4.mp4" type="video/mp4">
-                    お使いのブラウザはビデオタグをサポートしていません。
-                </video>
+            <!-- 動画2つを横並びに -->
+            <div class="video-grid">
+                <div class="video-item">
+                    <video autoplay muted loop playsinline class="video-content">
+                        <source src="video/245932.mp4" type="video/mp4">
+                        お使いのブラウザはビデオタグをサポートしていません。
+                    </video>
+                    <p class="text-white text-center mt-o-10 text-20">爽快なスキー体験</p>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline class="video-content">
+                        <source src="video/265501.mp4" type="video/mp4">
+                        お使いのブラウザはビデオタグをサポートしていません。
+                    </video>
+                    <p class="text-white text-center mt-o-10 text-20">絶景パウダースノー</p>
+                </div>
             </div>
             
             <!-- 追加画像2枚 -->
-            <div class="additional-images flex flex-wrap justify-between mt-o-20 mb-o-40">
+            <div class="additional-images flex flex-wrap justify-between mt-o-40 mb-o-40">
                 <div class="image-item w-o-340 md:w-o-440 mx-auto md:mx-0">
                     <img src="img/ski_action.jpg" alt="スキーアクション" class="rounded-lg shadow-lg">
                     <p class="text-white text-center mt-o-10 text-20">絶景ゲレンデでスキー体験</p>
